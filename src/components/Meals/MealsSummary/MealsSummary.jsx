@@ -1,4 +1,4 @@
-import'./MealsSummary.css';
+import "./MealsSummary.css";
 
 export const MealsSummary = () => {
   return (

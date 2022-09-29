@@ -3,7 +3,7 @@ import { Input } from "../../UI/Input/Input";
 import "./MealItemForm.css";
 
 export const MealItemForm = (props) => {
-  const[amountIsValid, setAmountIsValid] = useState(true)
+  const [amountIsValid, setAmountIsValid] = useState(true);
   const amountInputRef = useRef();
 
   const submitHandler = (event) => {
@@ -17,7 +17,7 @@ export const MealItemForm = (props) => {
       enteredAmountNumber < 1 ||
       enteredAmountNumber > 5
     ) {
-      setAmountIsValid(false)
+      setAmountIsValid(false);
       return;
     }
 
@@ -39,7 +39,7 @@ export const MealItemForm = (props) => {
         }}
       />
       <button>+ Add</button>
-      {!amountIsValid &&  <p>Please entere a valid amount (1-5)!</p>}
+      {!amountIsValid && <p>Please entere a valid amount (1-5)!</p>}
     </form>
   );
 };
